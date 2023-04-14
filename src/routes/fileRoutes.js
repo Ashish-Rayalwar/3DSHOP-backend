@@ -4,7 +4,7 @@ const {
   getFileById,
   updateFilesById,
   deleteFilesById,
-} = require("../controller/fileCOntroller");
+} = require("../controller/fileController");
 const { downloadFile, getDownload } = require("../controller/orderController");
 const {
   AdminAuthorization,
