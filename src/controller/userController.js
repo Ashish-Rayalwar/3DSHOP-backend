@@ -98,7 +98,7 @@ const loginUser = async (req, res) => {
       expiresIn: 86400,
     });
     return res
-      .cookie("token", token, { httpOnly: true })
+      .cookie("token", token, { httpOnly: true, secure: true, sameSite: true })
       .status(200)
       .json({ message: "Login Success", data: rest });
   } catch (error) {
